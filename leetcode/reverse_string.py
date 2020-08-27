@@ -14,3 +14,10 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         s[:] = s[::-1]
+
+
+if __name__ == "__main__":
+    input_1 = ["h", "e", "l", "l", "o"]
+    Solution().reverseString(input_1)
+    input_2 = ["H", "a", "n", "n", "a", "h"]
+    Solution().reverseString(input_2)

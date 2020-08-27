@@ -23,3 +23,10 @@ class Solution:
         if pal == pal[::-1]:
             return True
         return False
+
+
+if __name__ == "__main__":
+    input_1 = "A man, a plan, a canal: Panama"
+    print(Solution().isPalindrome(input_1))
+    input_2 = "race a car"
+    print(Solution().isPalindrome(input_2))
