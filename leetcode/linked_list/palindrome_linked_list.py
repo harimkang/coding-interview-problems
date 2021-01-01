@@ -39,9 +39,9 @@ if __name__ == "__main__":
     output_1 = False
     answer_1 = Solution().isPalindrome(node_1)
     if answer_1 == output_1:
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))
 
     node_1 = ListNode(1)
     node_2 = ListNode(2)
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     output_1 = True
     answer_1 = Solution().isPalindrome(node_1)
     if answer_1 == output_1:
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))

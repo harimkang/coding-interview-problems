@@ -18,9 +18,10 @@ def solution(priorities, location):
 
     return answer
 
-p = [2,1,3,2]
+
+p = [2, 1, 3, 2]
 l = 2
-p_2 = [1,1,9,1,1,1]
+p_2 = [1, 1, 9, 1, 1, 1]
 l_2 = 0
-print(solution(p,l))
+print(solution(p, l))
 print(solution(p_2, l_2))

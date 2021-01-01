@@ -18,7 +18,9 @@ class Solution:
         answer = 0
         max_left, max_right = height[left], height[-1]
         while left < right:
-            max_left, max_right = max(max_left, height[left]), max(max_right, height[right])
+            max_left, max_right = max(max_left, height[left]), max(
+                max_right, height[right]
+            )
             if max_left >= max_right:
                 answer += max_right - height[right]
                 right -= 1

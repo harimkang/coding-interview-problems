@@ -1,9 +1,7 @@
 def solution(name):
     answer = 0
-    front_alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
-                   'J', 'K', 'L', 'M']
-    back_alpha = ['N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-                  'W', 'X', 'Y', 'Z', 'A']
+    front_alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
+    back_alpha = ["N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A"]
     back_alpha.reverse()
     not_a_index = 0
     ck = False
@@ -14,7 +12,7 @@ def solution(name):
         else:
             answer += back_alpha.index(current)
 
-        if current == 'A':
+        if current == "A":
             pass
         else:
             if not_a_index + len(name) - i >= i - not_a_index:
@@ -29,6 +27,6 @@ def solution(name):
     return answer
 
 
-tc = ['BBBBAAAAAB', 'JEROEN', 'AZAAAZ', 'ABAAAABAB', 'ABAAAAAAAAABB']
+tc = ["BBBBAAAAAB", "JEROEN", "AZAAAZ", "ABAAAABAB", "ABAAAAAAAAABB"]
 for c in tc:
     print(solution(c))

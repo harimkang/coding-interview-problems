@@ -12,7 +12,11 @@ import collections
 
 class Solution:
     def mostCommonWord(self, paragraph, banned):
-        word = [w for w in re.sub(r'[^\w]', ' ', paragraph).lower().split() if w not in banned]
+        word = [
+            w
+            for w in re.sub(r"[^\w]", " ", paragraph).lower().split()
+            if w not in banned
+        ]
         count = collections.Counter(word)
         answer = count.most_common(1)[0][0]
 

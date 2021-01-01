@@ -13,14 +13,14 @@ class Solution:
         if not digits:
             return []
         str_digit = {
-            '2': list('abc'),
-            '3': list('def'),
-            '4': list('ghi'),
-            '5': list('jkl'),
-            '6': list('mno'),
-            '7': list('pqrs'),
-            '8': list('tuv'),
-            '9': list('wxyz')
+            "2": list("abc"),
+            "3": list("def"),
+            "4": list("ghi"),
+            "5": list("jkl"),
+            "6": list("mno"),
+            "7": list("pqrs"),
+            "8": list("tuv"),
+            "9": list("wxyz"),
         }
 
         answer = []
@@ -31,17 +31,17 @@ class Solution:
                 return
             for i in range(index, len(digits)):
                 for j in str_digit[digits[i]]:
-                    dfs(i+1, path + j)
+                    dfs(i + 1, path + j)
 
-        dfs(0, '')
+        dfs(0, "")
 
         return answer
 
 
 if __name__ == "__main__":
-    input_1 = '23'
+    input_1 = "23"
     answer_1 = Solution().letterCombinations(input_1)
     if answer_1 == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]:
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))

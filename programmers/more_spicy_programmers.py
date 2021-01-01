@@ -16,7 +16,7 @@ def solution(scoville, K):
         else:
             answer += 1
             next_node = heapq.heappop(heap)
-            heapq.heappush(heap, current + next_node*2)
+            heapq.heappush(heap, current + next_node * 2)
 
     return answer
 

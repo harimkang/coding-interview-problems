@@ -20,11 +20,11 @@ class Solution:
 
         # Maximum O(n**2)
         for i in range(len(nums) - 2):
-            if i > 0 and nums[i] == nums[i-1]:
+            if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
             # Using Two Point Method
-            left, right = i+1, len(nums) - 1
+            left, right = i + 1, len(nums) - 1
             while left < right:
                 h_sum = nums[i] + nums[left] + nums[right]
                 if h_sum < 0:

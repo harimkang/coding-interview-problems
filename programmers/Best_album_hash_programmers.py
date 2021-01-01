@@ -8,10 +8,10 @@ def solution(genres, plays):
         genre = genres[i]
         num_play = plays[i]
         if genre in song:
-            song[genre].append([(-1)*num_play, i])
+            song[genre].append([(-1) * num_play, i])
             song[genre].sort()
         else:
-            song[genre] = [[(-1)*num_play, i]]
+            song[genre] = [[(-1) * num_play, i]]
 
         if genre in sum_play:
             sum_play[genre] += num_play
@@ -30,8 +30,8 @@ def solution(genres, plays):
     return answer
 
 
-gen = ['classic', 'pop', 'classic', 'classic', 'pop']
-gen_2 = ['classic', 'kpop', 'aa', 'aa', 'kpop']
+gen = ["classic", "pop", "classic", "classic", "pop"]
+gen_2 = ["classic", "kpop", "aa", "aa", "kpop"]
 play = [500, 600, 150, 800, 2500]
 play_2 = [4, 5, 1, 1, 3]
 print(solution(gen, play))

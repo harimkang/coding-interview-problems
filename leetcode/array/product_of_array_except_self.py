@@ -32,7 +32,7 @@ class Solution:
             answer = [0 if nums[i] != 0 else max_product for i in range(len(nums))]
         else:
             # If there is no zero, divide the number at that position by the maximum product normally
-            answer = [int(max_product/nums[i]) for i in range(len(nums))]
+            answer = [int(max_product / nums[i]) for i in range(len(nums))]
 
         return answer
 

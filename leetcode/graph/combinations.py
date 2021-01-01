@@ -28,7 +28,7 @@ class Solution:
 
             for i in range(index, len(num_list)):
                 if num_list[i] not in path:
-                    dfs(i+1, path + [num_list[i]])
+                    dfs(i + 1, path + [num_list[i]])
 
         for n in range(len(num_list) - k + 1):
             dfs(n, [num_list[n]])
@@ -48,6 +48,6 @@ if __name__ == "__main__":
     ]
     answer_1 = Solution().combine(a, b)
     if sorted(answer_1) == sorted(output_1):
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))

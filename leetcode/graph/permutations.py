@@ -23,6 +23,7 @@ class Solution:
                 if nums[i] not in path:
                     temp = path + [nums[i]]
                     dfs(temp)
+
         for n in nums:
             dfs([n])
 
@@ -31,16 +32,9 @@ class Solution:
 
 if __name__ == "__main__":
     input_1 = [1, 2, 3]
-    output_1 = [
-        [1, 2, 3],
-        [1, 3, 2],
-        [2, 1, 3],
-        [2, 3, 1],
-        [3, 1, 2],
-        [3, 2, 1]
-    ]
+    output_1 = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
     answer_1 = Solution().permute(input_1)
     if answer_1 == output_1:
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))

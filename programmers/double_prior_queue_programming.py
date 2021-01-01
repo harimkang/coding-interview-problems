@@ -34,12 +34,12 @@ def solution(operations):
     for op in operations:
         op = op.split()
         op[1] = int(op[1])
-        if op[0] == 'D':
+        if op[0] == "D":
             if op[1] == 1:
                 delete(max_pq, pq)
             elif op[1] == -1:
                 delete(pq, max_pq)
-        elif op[0] == 'I':
+        elif op[0] == "I":
             insert(op[1])
 
     if pq:
@@ -51,10 +51,8 @@ def solution(operations):
     return answer
 
 
-o = ['I 16', 'D 1']
-o2 = ['I 7', 'I 5', 'I -5', 'D -1']
+o = ["I 16", "D 1"]
+o2 = ["I 7", "I 5", "I -5", "D -1"]
 
 print(solution(o))
 print(solution(o2))
-
-

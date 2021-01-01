@@ -10,7 +10,6 @@ Status: Success, Runtime: 5424 ms, Memory Usage: 14 MB
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-
         def is_palindrome(_s):
             if _s == _s[::-1]:
                 return True
@@ -20,12 +19,12 @@ class Solution:
         if len(s) <= 1 or is_palindrome(s):
             return s
 
-        for i in range(len(s)-1):
+        for i in range(len(s) - 1):
             if len(s[i]) > len(answer):
                 answer = s[i]
-            for j in range(i+1, len(s)):
-                if is_palindrome(s[i:j+1]) and len(s[i:j+1]) > len(answer):
-                    answer = s[i:j+1]
+            for j in range(i + 1, len(s)):
+                if is_palindrome(s[i : j + 1]) and len(s[i : j + 1]) > len(answer):
+                    answer = s[i : j + 1]
 
         return answer
 

@@ -1,4 +1,3 @@
-
 def solution(people, limit):
     answer = 0
     people.sort()
@@ -35,7 +34,6 @@ def solution2(people, limit):
         j -= 1
 
     return answer
-
 
 
 tc = [[[70, 50, 80, 50], 100], [[70, 80, 50], 100], [[20, 50, 50, 80], 100]]

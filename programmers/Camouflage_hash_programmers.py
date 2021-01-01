@@ -13,13 +13,17 @@ def solution(clothes):
         num_category.append(len(closet[key]))
 
     for i in num_category:
-        answer *= (i+1)
+        answer *= i + 1
     answer -= 1
 
     return answer
 
 
-a = [['yellow_hat', 'headgear'], ['blue_sunglasses', 'eyewear'], ['green_turban', 'headgear']]
-b = [['crow_mask', 'face'], ['blue_sunglasses', 'face'], ['smoky_makeup', 'face']]
+a = [
+    ["yellow_hat", "headgear"],
+    ["blue_sunglasses", "eyewear"],
+    ["green_turban", "headgear"],
+]
+b = [["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]
 print(solution(a))
 print(solution(b))

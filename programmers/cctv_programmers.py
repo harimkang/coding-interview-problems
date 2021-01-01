@@ -33,7 +33,6 @@ def solution(routes):
     return answer
 
 
-tc = [[[-20,15], [-14,-5], [-18,-13], [-5,-3]]]
+tc = [[[-20, 15], [-14, -5], [-18, -13], [-5, -3]]]
 for c in tc:
     print(solution(c))
-

@@ -14,7 +14,7 @@ class Solution:
         dic = {}
         group = []
         for a in strs:
-            b = ''.join(sorted(a))
+            b = "".join(sorted(a))
             if b in dic:
                 dic[b].append(a)
             else:

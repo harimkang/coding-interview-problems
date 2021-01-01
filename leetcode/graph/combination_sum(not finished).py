@@ -16,24 +16,17 @@ class Solution:
 
 if __name__ == "__main__":
     a, b = [2, 3, 6, 7], 7
-    output_1 = [
-        [7],
-        [2, 2, 3]
-    ]
+    output_1 = [[7], [2, 2, 3]]
     answer_1 = Solution().combinationSum(a, b)
     if sorted(answer_1) == sorted(output_1):
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))
 
     a, b = [2, 3, 5], 8
-    output_1 = [
-        [2, 2, 2, 2],
-        [2, 3, 3],
-        [3, 5]
-    ]
+    output_1 = [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
     answer_1 = Solution().combinationSum(a, b)
     if sorted(answer_1) == sorted(output_1):
-        print('Success: {}'.format(answer_1))
+        print("Success: {}".format(answer_1))
     else:
-        print('Failed: {}'.format(answer_1))
+        print("Failed: {}".format(answer_1))

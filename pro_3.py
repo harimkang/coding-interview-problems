@@ -16,13 +16,26 @@ def bfs_paths(graph, start, goal):
     return result
 
 
-depar = 'SEOUL'
-hub = 'DAEGU'
-dest = 'YEOSU'
+depar = "SEOUL"
+hub = "DAEGU"
+dest = "YEOSU"
 # roads = [['SEOUL', "DAEJEON"], ["ULSAN", "BUSAN"], ["DAEJEON", "ULSAN"], ["DAEJEON", "GWANGJU"], ["SEOUL", "ULSAN"],
 #          ["DAEJEON", "BUSAN"], ["GWANGJU", "BUSAN"]]
 
-roads = [["ULSAN","BUSAN"],["DAEJEON","ULSAN"],["DAEJEON","GWANGJU"],["SEOUL","DAEJEON"],["SEOUL","ULSAN"],["DAEJEON","DAEGU"],["GWANGJU","BUSAN"],["DAEGU","GWANGJU"],["DAEGU","BUSAN"],["ULSAN","DAEGU"],["GWANGJU","YEOSU"],["BUSAN","YEOSU"]]
+roads = [
+    ["ULSAN", "BUSAN"],
+    ["DAEJEON", "ULSAN"],
+    ["DAEJEON", "GWANGJU"],
+    ["SEOUL", "DAEJEON"],
+    ["SEOUL", "ULSAN"],
+    ["DAEJEON", "DAEGU"],
+    ["GWANGJU", "BUSAN"],
+    ["DAEGU", "GWANGJU"],
+    ["DAEGU", "BUSAN"],
+    ["ULSAN", "DAEGU"],
+    ["GWANGJU", "YEOSU"],
+    ["BUSAN", "YEOSU"],
+]
 
 
 _graph = dict()

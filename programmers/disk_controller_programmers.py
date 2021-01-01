@@ -32,7 +32,7 @@ def solution(jobs):
                     # 만약에 pq가 비었는데 jobs 는 존재할때,
                     # 즉, 도착한 작업이 없고 대기 작업은 존재할때
                     e, f = heapq.heappop(jobs)
-                    heapq.heappush(pq, (e+f, e, f))
+                    heapq.heappush(pq, (e + f, e, f))
                 break
             else:
                 # current 보다 시작점이 작으면 가능한 경우이기 때문에 pq에 넣어봄

@@ -3,7 +3,12 @@ def solution(baseball):
     for i in range(111, 1000):
         comp = str(i)
         ck = True
-        if '0' in comp or comp[0] == comp[1] or comp[1] == comp[2] or comp[0] == comp[2]:
+        if (
+            "0" in comp
+            or comp[0] == comp[1]
+            or comp[1] == comp[2]
+            or comp[0] == comp[2]
+        ):
             continue
         for a, strike, ball in baseball:
             a = str(a)
