@@ -4,14 +4,14 @@ url: https://www.acmicpc.net/problem/1695
 writer: Harim Kang
 Language: Python3
 Date: 2021.01.08
-Status: Success, Runtime: 640 ms, Memory Usage: 34252 KB
+Status: , Runtime:  ms, Memory Usage:  KB
 """
 
 # input을 받는 코드 : N
-# N = int(input())
-# num_list = list(map(int, input().split()))
-N = 5
-num_list = [1, 2, 3, 4, 2]
+N = int(input())
+num_list = list(map(int, input().split()))
+# N = 5
+# num_list = [1, 2, 3, 4, 2]
 
 # i, j자리의 숫자를 비교해서 같으면 한칸씩 줄이고, 다르면 1개를 추가해야한다는 의미로, +1 해주고 한쪽만 줄이는 방식
 dp = [[None for _ in range(N)] for _ in range(N)]
